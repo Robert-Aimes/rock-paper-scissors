@@ -9,4 +9,13 @@ function getComputerChoice(){
     } else {
         return "Scissors";
     }
+}  
+
+function getHumanChoice() { 
+    let choice = prompt("Please type Rock, Paper or Scissors");
+    return choice;
+
 }
+
+console.log(getComputerChoice());
+console.log(getHumanChoice());
