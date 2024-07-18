@@ -1,10 +1,10 @@
 alert("Hello world!")
 
 function getComputerChoice(){
-    let choice = Math.random;
-    if (choice <=0.33) {
+    let compChoice = Math.random;
+    if (compChoice <=0.33) {
         return "Rock";
-    } else if ((choice > 0.33) && (choice <= 0.66)) {
+    } else if ((compChoice > 0.33) && (compChoice <= 0.66)) {
         return "Paper";
     } else {
         return "Scissors";
@@ -12,9 +12,16 @@ function getComputerChoice(){
 }  
 
 function getHumanChoice() { 
-    let choice = prompt("Please type Rock, Paper or Scissors");
-    return choice;
+    let humanChoice = prompt("Please type Rock, Paper or Scissors");
+    return humanChoice;
 
+}
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+    
 }
 
 console.log(getComputerChoice());
