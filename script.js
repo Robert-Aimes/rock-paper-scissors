@@ -53,4 +53,11 @@ function playRound(humanChoice, computerChoice) {
     
 }
 
-playRound();
+
+for(let i = 0; i < 5; i++){
+    playRound();
+    if(i == 4){
+        alert("Final Score: \n Computer: " + computerScore + "\n Player: " + humanScore);
+    }
+
+}
