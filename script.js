@@ -1,13 +1,14 @@
 function getComputerChoice(){
-    let compChoice = Math.random;
-    if (compChoice <=0.33) {
+    let compChoice = Math.random();
+    if (compChoice <= 0.33) {
         return "Rock";
-    } else if ((compChoice > 0.33) && (compChoice <= 0.66)) {
+    } else if (compChoice <= 0.66) {
         return "Paper";
     } else {
         return "Scissors";
     }
-}  
+}
+
 
 function getHumanChoice() { 
     let humanChoice = prompt("Please type Rock, Paper or Scissors");
