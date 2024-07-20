@@ -1,5 +1,3 @@
-alert("Hello world!")
-
 function getComputerChoice(){
     let compChoice = Math.random;
     if (compChoice <=0.33) {
@@ -49,6 +47,9 @@ function playRound(humanChoice, computerChoice) {
         alert("You lost. Rock beats Scissors.")
         computerScore++;
     }
+
+    alert("Computer: " + computerScore + ". Your Score: " + humanScore);
+    
     
 }
 
